@@ -11,21 +11,21 @@
     
     2.1. Login into  bitbucket and Create new repository.
        
-       ![Create Repo](/images/1.png)
+       ![Create](/images/1.png)
        
     2.2. Maintain code in your bitbucket repository.
     
     2.3. Go to Pipelines by clicking on the corresponding menu item in the sidebar.
     
-       ![Pipelines](/images/2.png)
+       ![Pipe](/images/2.png)
     
     2.4. Choose a language template and configured via the bitbucket-pipelines.yml file.
         
-        ![ChooseLanguage](/images/3.png)
+        ![Choose](/images/3.png)
     
     2.5. The below example should have the command npm install.(Remove npm test because we are not testing here. if you have test cases you can use.)
     
-       ![YMLCode](/images/4.png)
+       ![YML](/images/4.png)
     
     2.6. Finally do commit.
     
