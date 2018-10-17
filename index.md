@@ -1,4 +1,4 @@
-# ContinouesIntegration-Workshop
+# Continuous Integration - Workshop
 
 * [Website](https://testingcigdp.herokuapp.com)
 * [Code](https://bitbucket.org/professorcase/testing-ci)
