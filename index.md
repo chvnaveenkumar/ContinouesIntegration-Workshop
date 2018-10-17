@@ -3,6 +3,11 @@
 * [Website](https://testingcigdp.herokuapp.com)
 * [Code](https://bitbucket.org/professorcase/testing-ci)
 
+# Team Members
+
+* Naveen Kumar Chandaluri
+* Shivani Reddy Dodla
+
 ## How to Add Continuous Integration to your Project.
 
 1. Build a sample Node JS Appliction.
