@@ -1,0 +1,83 @@
+<h1 id="continuousintegrationworkshop">Continuous Integration - Workshop</h1>
+
+<ul>
+<li><a href="https://testingcigdp.herokuapp.com">Website</a></li>
+
+<li><a href="https://bitbucket.org/professorcase/testing-ci">Code</a></li>
+</ul>
+
+<h1 id="teammembers">Team Members</h1>
+
+<ul>
+<li>Naveen Kumar Chandaluri</li>
+
+<li>Shivani Reddy Dodla</li>
+</ul>
+
+<h2 id="howtoaddcontinuousintegrationtoyourproject">How to Add Continuous Integration to your Project.</h2>
+
+<ol>
+<li><p>Build a sample Node JS Appliction.
+<a href="https://bitbucket.org/professorcase/testing-ci">Sample NodeJS Application repo</a></p></li>
+
+<li><p>Implement Continous Integration with Bitbucket Pipelines.</p>
+
+<p>2.1. Login into  bitbucket and Create new repository.</p>
+
+<p><img src="/images/1.png" alt="Create" /></p>
+
+<p>2.2. Maintain code in your bitbucket repository.</p>
+
+<p>2.3. Go to Pipelines by clicking on the corresponding menu item in the sidebar.</p>
+
+<p><img src="/images/2.png" alt="Pipe" /></p>
+
+<p>2.4. Choose a language template and configured via the bitbucket-pipelines.yml file.</p>
+
+<p><img src="/images/3.png" alt="Choose" /></p>
+
+<p>2.5. The below example should have the command npm install.(Remove npm test because we are not testing here. if you have test cases you can use.)</p>
+
+<p><img src="/images/4.png" alt="YML" /></p>
+
+<p>2.6. Finally do commit.</p>
+
+<ol>
+<li>Deploy this repository to Heroku via the Git interface.</li></ol>
+
+<p>3.1. Login into Heroku and create new app.</p>
+
+<p>3.2. Set HEROKU<em>API</em>KEY and HEROKU<em>APP</em>NAME environment variables in the repo.( go to repo settings click on Environment Variable under piplines )</p>
+
+<p><img src="/images/5EnvironmentVariables.png" alt="YMLCode" /></p>
+
+<p>3.3. Add below script to bitbucket-pipelines.yml in the repository.</p>
+
+<ul>
+<li><p>script:</p>
+
+<ul>
+<li>git push https://heroku:$HEROKU<em>API</em>KEY@git.heroku.com/$HEROKU<em>APP</em>NAME.git HEAD</li></ul>
+
+<p><img src="/images/7Ymlfile.png" alt="YMLCode" /></p></li></ul>
+
+<p>3.4. After adding script into bitbucket-pipelines.yml then do commit.</p>
+
+<p>3.5. Goto Pipelines then check the pipeline status. if it is green then application deployed successful. Red shows build failed then check your code and deploy.</p>
+
+<p><img src="/images/8succes.png" alt="final" /></p></li>
+</ol>
+
+<h1 id="tutorial">Tutorial</h1>
+
+<p>https://www.atlassian.com/continuous-delivery/continuous-integration-tutorial</p>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127484904-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-127484904-1');
+</script>
