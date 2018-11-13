@@ -1,17 +1,10 @@
-# Continuous Integration - Workshop
-
-* [Website](https://testingcigdp.herokuapp.com)
-* [Code](https://bitbucket.org/professorcase/testing-ci)
-
-# Team Members
-
-* Naveen Kumar Chandaluri
-* Shivani Reddy Dodla
+# Continuous Integration - Bitbucket
 
 ## How to Add Continuous Integration to your Project.
 
 1. Build a sample Node JS Appliction.
-   [Sample NodeJS Application repo](https://bitbucket.org/professorcase/testing-ci)
+   [Sample NodeJS Application repo](https://github.com/chvnaveenkumar/Continuous-Integration-Bitbucket)
+   
 2. Implement Continous Integration with Bitbucket Pipelines.
     
     2.1. Login into  bitbucket and Create new repository.
@@ -59,18 +52,3 @@
 # Tutorial
 
 https://www.atlassian.com/continuous-delivery/continuous-integration-tutorial
-
-
-
-
-
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128479171-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-128479171-1');
-</script>
